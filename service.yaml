@@ -4,7 +4,7 @@ services:
   web:
     image: nginx:latest  # Use the latest Nginx image from Docker Hub
     ports:
-      - "82:82"  # Map port 82 on the host to port 82 on the containers
+      - "80:80"  # Map port 82 on the host to port 82 on the containers
     deploy:
       replicas: 3  # Number of replicas you want to run in the swarm
       update_config:
